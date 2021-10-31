@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid layout sample</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns:  repeat(3,1fr);
+            grid-template-rows: repeat(auto,1fr);
+            grid-gap:1em;
+        }
+    </style>
 </head>
 <body>
-    
+        <div class="grid-container">
+            <div>housing element one</div>
+            <div>housing element two</div>
+            <div>housing element three </div>
+        </div>
 </body>
 </html>
